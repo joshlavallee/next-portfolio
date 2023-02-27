@@ -1,11 +1,9 @@
 'use client'
 
 import { Canvas } from '@react-three/fiber'
-import { Cube, Sphere, Plane } from '@/app/components'
+import { Cube, Sphere, Plane } from '@/components'
 
-export default function Home() {
-
-
+const Home: React.FC = () => {
   return (
     <Canvas>
       <Cube />
@@ -14,3 +12,5 @@ export default function Home() {
     </Canvas>
   )
 }
+
+export default Home

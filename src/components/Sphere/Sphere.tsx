@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 
-const Sphere = () => {
+const Sphere: React.FC = () => {
     const ref = useRef<any>()
 
     useFrame((_, delta) => {

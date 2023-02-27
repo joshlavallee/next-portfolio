@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 
-const Plane = () => {
+const Plane: React.FC = () => {
     const ref = useRef<any>()
 
     useFrame((_, delta) => {
