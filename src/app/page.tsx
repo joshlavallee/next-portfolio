@@ -1,11 +1,16 @@
-import { Inter } from '@next/font/google'
+'use client'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Canvas } from '@react-three/fiber'
+import { Cube, Sphere, Plane } from '@/app/components'
 
 export default function Home() {
+
+
   return (
-    <h1 className={inter.className}>
-      Josh Lavallee
-    </h1>
+    <Canvas>
+      <Cube />
+      <Sphere />
+      <Plane />
+    </Canvas>
   )
 }
