@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
+import { DoubleSide } from 'three'
 
 const Plane: React.FC = () => {
     const ref = useRef<any>()
@@ -10,9 +11,9 @@ const Plane: React.FC = () => {
     })
 
     return (
-        <mesh ref={ref} scale={[2, 2, 2]} position={[3, 0, 0]}>
-            <planeBufferGeometry doubleSided />
-            <meshBasicMaterial color={"green"} wireframe />
+        <mesh ref={ref} scale={[2, 2, 2]} position={[3, 0, 0]} >
+            <planeBufferGeometry />
+            <meshBasicMaterial color={"green"} side={DoubleSide}/>
         </mesh>
     )
 }

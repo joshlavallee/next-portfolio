@@ -12,7 +12,7 @@ const Sphere: React.FC = () => {
     return (
         <mesh ref={ref} position={[-3, 0, 0]}>
             <sphereGeometry />
-            <meshBasicMaterial color={"blue"} wireframe />
+            <meshBasicMaterial color={"blue"} />
         </mesh>
     )
 }
